@@ -1,0 +1,48 @@
+{
+  "categories": [
+    {
+      "id": "pool-entrance",
+      "name": "Entrada Piscina",
+      "items": [
+        {
+          "id": "daypass",
+          "name": "Adulto · Día completo",
+          "description": "Acceso a la piscina climatizada, zona de descanso y mirador panorámico.",
+          "price": 15000,
+          "unit": "por persona",
+          "featured": true
+        },
+        {
+          "id": "child-daypass",
+          "name": "Niño · Día completo",
+          "description": "Acceso a la piscina climatizada para niños hasta 10 años.",
+          "price": 10000,
+          "unit": "por persona",
+          "featured": false
+        },
+        {
+          "id": "hourpass",
+          "name": "Por hora",
+          "description": "Acceso a la piscina climatizada por hora.",
+          "price": 5000,
+          "unit": "por persona",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "special-packages",
+      "name": "Paquetes Especiales",
+      "items": [
+        {
+          "id": "pack-daypass",
+          "name": "Paquete · Día de sol",
+          "description": "Acceso a la piscina climatizada + almuerzo + heladito",
+          "price": 40000,
+          "unit": "por persona",
+          "featured": true
+        }
+      ]
+    }
+  ]
+}

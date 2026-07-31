@@ -1,0 +1,32 @@
+[
+  {
+    "id": "full-moon-night",
+    "title": "Noche de Luna Llena",
+    "date": "2026-08-15",
+    "description": "Una velada especial junto a la piscina climatizada, con música en vivo, luces cálidas y la mejor vista de la luna sobre las montañas.",
+    "image": "/images/events/full-moon-night.jpg",
+    "price": "$85.000 COP",
+    "ctaLabel": "Reservar por WhatsApp",
+    "ctaUrl": "https://wa.me/573000000000"
+  },
+  {
+    "id": "sunset-sessions",
+    "title": "Sunset Sessions",
+    "date": "2026-09-05",
+    "description": "Disfruta del atardecer sobre Bello con coctelería de autor y DJ en vivo mientras la piscina cambia de color.",
+    "image": "/images/events/sunset-sessions.jpg",
+    "price": "$65.000 COP",
+    "ctaLabel": "Reservar por WhatsApp",
+    "ctaUrl": "https://wa.me/573000000000"
+  },
+  {
+    "id": "family-sunday",
+    "title": "Domingo Familiar",
+    "date": "2026-09-20",
+    "description": "Un día completo para toda la familia: piscina, juegos, almuerzo típico y actividades al aire libre rodeados de naturaleza.",
+    "image": "/images/events/family-sunday.jpg",
+    "price": "$120.000 COP por familia",
+    "ctaLabel": "Reservar por WhatsApp",
+    "ctaUrl": "https://wa.me/573000000000"
+  }
+]

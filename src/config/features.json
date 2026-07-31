@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "hero": true,
+    "about": true,
+    "gallery": true,
+    "menu": true,
+    "events": false,
+    "pricing": true,
+    "contact": true,
+    "location": true,
+    "faq": true
+  },
+  "buttons": {
+    "heroMenuCta": true,
+    "heroDirectionsCta": false,
+    "reserveWhatsapp": true
+  }
+}

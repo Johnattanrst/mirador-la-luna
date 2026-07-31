@@ -1,0 +1,74 @@
+[
+  {
+    "id": "restaurant-1",
+    "category": "restaurant",
+    "label": "",
+    "image": "/images/gallery/restaurant-1.jpg"
+  },
+  {
+    "id": "pool-1",
+    "category": "pool",
+    "label": "",
+    "image": "/images/gallery/pool-1.jpg"
+  },
+  {
+    "id": "night-1",
+    "category": "night",
+    "label": "",
+    "image": "/images/gallery/night-1.jpg"
+  },
+  {
+    "id": "nature-1",
+    "category": "nature",
+    "label": "",
+    "image": "/images/gallery/nature-1.jpg"
+  },
+  {
+    "id": "sunset-1",
+    "category": "sunset",
+    "label": "",
+    "image": "/images/gallery/sunset-1.jpg"
+  },
+  {
+    "id": "events-1",
+    "category": "events",
+    "label": "",
+    "image": "/images/gallery/events-1.jpg"
+  },
+  {
+    "id": "restaurant-2",
+    "category": "restaurant",
+    "label": "",
+    "image": "/images/gallery/restaurant-2.jpg"
+  },
+  {
+    "id": "pool-2",
+    "category": "pool",
+    "label": "",
+    "image": "/images/gallery/pool-2.jpg"
+  },
+  {
+    "id": "night-2",
+    "category": "night",
+    "label": "",
+    "image": "/images/gallery/night-2.jpg"
+  },
+  {
+    "id": "nature-2",
+    "category": "nature",
+    "label": "",
+    "image": "/images/gallery/nature-2.jpg"
+  },
+  {
+    "id": "sunset-2",
+    "category": "sunset",
+    "label": "",
+    "image": "/images/gallery/sunset-2.jpg"
+  },
+  {
+    "id": "events-2",
+    "category": "events",
+    "label": "",
+    "image": "/images/gallery/events-2.jpg"
+  }
+]

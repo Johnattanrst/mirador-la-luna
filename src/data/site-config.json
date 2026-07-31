@@ -1,0 +1,27 @@
+{
+  "name": "Mirador La Luna",
+  "tagline": "Restaurante, mirador y experiencia de montaña en Bello",
+  "menuUrl": "https://menu.miradorlaluna.com",
+  "locale": "es",
+  "availableLocales": ["es"],
+  "contact": {
+    "whatsapp": "https://wa.me/573114008755",
+    "instagram": "https://www.instagram.com/mira_dorlaluna",
+    "facebook": "https://www.facebook.com/share/19NNXNtTm7/",
+    "tiktok": "https://www.tiktok.com/@mirador_laluna",
+    "email": "vistahermosabello@gmail.com",
+    "phone": "+57 311 400 8755"
+  },
+  "openingHours": [
+    { "days": "Lunes a Jueves", "hours": "12:00 – 22:00" },
+    { "days": "Viernes, Sábado y Domingo", "hours": "12:00 – 24:00" }
+  ],
+  "location": {
+    "address": "Bello, Antioquia, Colombia",
+    "lat": 6.356930,
+    "lng": -75.570336,
+    "mapsEmbedUrl": "https://maps.google.com/maps?q=6.356930,-75.570336&z=15&output=embed",
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=6.356930,-75.570336",
+    "parkingInfo": "Parqueadero al aire libre en los alrededores."
+  }
+}

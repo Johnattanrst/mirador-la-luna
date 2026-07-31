@@ -1,0 +1,164 @@
+/**
+ * Mirador La Luna — Design Tokens
+ * Theme: Moonlight Luxury
+ *
+ * Warm moonlight, gold accents, charcoal stone, soft ambient lighting.
+ * Supports automatic light/dark switching via prefers-color-scheme,
+ * with a manual override applied through the [data-theme] attribute.
+ */
+
+:root {
+  /* ---- Color: Dark (default) ---- */
+  --color-primary: #d4af37;
+  --color-primary-light: #e8c766;
+  --color-primary-dark: #b8941f;
+  /* WCAG AA-safe gold for text/borders on light surfaces; equals --color-primary where that already passes (dark mode). */
+  --color-primary-accessible: var(--color-primary);
+  --color-secondary: #2c2416;
+  --color-accent: #1a1a1a;
+  --color-pool: #00bfd4;
+  --color-pool-accessible: var(--color-pool);
+
+  --color-bg: #141414;
+  --color-bg-elevated: #1f1f1f;
+  --color-surface: #232323;
+  --color-border: #404040;
+  --color-border-subtle: #2a2a2a;
+
+  --color-success: #7cb342;
+  --color-warning: #f9a825;
+  --color-danger: #e53935;
+
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #bdbdbd;
+  --color-text-muted: #8a8a8a;
+
+  --color-nav-bg: rgb(20 20 20 / 85%);
+  --color-footer-bg: #0d0d0d;
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 60%,
+    var(--color-accent) 100%
+  );
+  --gradient-glow:
+    radial-gradient(circle at 20% 30%, rgb(212 175 55 / 15%), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgb(0 191 212 / 12%), transparent 45%);
+
+  /* ---- Typography ---- */
+  --font-heading: 'Playfair Display Variable', Georgia, serif;
+  --font-body: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --text-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8rem);
+  --text-sm: clamp(0.875rem, 0.84rem + 0.15vw, 0.95rem);
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.4rem);
+  --text-xl: clamp(1.4rem, 1.25rem + 0.7vw, 1.875rem);
+  --text-2xl: clamp(1.875rem, 1.6rem + 1.2vw, 2.5rem);
+  --text-3xl: clamp(2.25rem, 1.8rem + 2vw, 3.5rem);
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+
+  /* ---- Spacing (8px base) ---- */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  /* ---- Radius ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 2px 8px rgb(0 0 0 / 30%);
+  --shadow-md: 0 8px 24px rgb(212 175 55 / 15%);
+  --shadow-lg: 0 16px 40px rgb(212 175 55 / 22%);
+  --shadow-glow-pool: 0 0 40px rgb(0 191 212 / 25%);
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-base: 300ms;
+  --duration-slow: 800ms;
+
+  /* ---- Layout ---- */
+  --container-max: 1280px;
+  --container-padding: var(--space-md);
+  --nav-height: 72px;
+  --z-nav: 100;
+  --z-modal: 1000;
+  --z-lightbox: 1100;
+}
+
+/* ---- Color: Light mode override ---- */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #faf7f0;
+    --color-bg-elevated: #ffffff;
+    --color-surface: #ffffff;
+    --color-border: #e5ddc8;
+    --color-border-subtle: #f0eadc;
+
+    --color-text-primary: #1f1a12;
+    --color-text-secondary: #514a3c;
+    --color-text-muted: #8a8171;
+
+    --color-nav-bg: rgb(250 247 240 / 85%);
+    --color-footer-bg: #1f1a12;
+    --color-primary-accessible: #8f6a10;
+    --color-pool-accessible: #006b78;
+
+    --shadow-sm: 0 2px 8px rgb(0 0 0 / 8%);
+    --shadow-md: 0 8px 24px rgb(212 175 55 / 12%);
+    --shadow-lg: 0 16px 40px rgb(212 175 55 / 18%);
+  }
+}
+
+/* ---- Manual override: forced dark ---- */
+[data-theme='dark'] {
+  --color-bg: #141414;
+  --color-bg-elevated: #1f1f1f;
+  --color-surface: #232323;
+  --color-border: #404040;
+  --color-border-subtle: #2a2a2a;
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #bdbdbd;
+  --color-text-muted: #8a8a8a;
+  --color-nav-bg: rgb(20 20 20 / 85%);
+  --color-footer-bg: #0d0d0d;
+  --color-primary-accessible: var(--color-primary);
+  --color-pool-accessible: var(--color-pool);
+}
+
+/* ---- Manual override: forced light ---- */
+[data-theme='light'] {
+  --color-bg: #faf7f0;
+  --color-bg-elevated: #ffffff;
+  --color-surface: #ffffff;
+  --color-border: #e5ddc8;
+  --color-border-subtle: #f0eadc;
+  --color-text-primary: #1f1a12;
+  --color-text-secondary: #514a3c;
+  --color-text-muted: #8a8171;
+  --color-nav-bg: rgb(250 247 240 / 85%);
+  --color-footer-bg: #1f1a12;
+  --color-primary-accessible: #8f6a10;
+  --color-pool-accessible: #006b78;
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+  }
+}

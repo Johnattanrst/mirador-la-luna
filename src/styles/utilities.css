@@ -1,0 +1,61 @@
+/* Reusable layout & accessibility utilities. */
+
+.container {
+  inline-size: 100%;
+  max-inline-size: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.container-query {
+  container-type: inline-size;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  inset-block-start: -100%;
+  inset-inline-start: var(--space-md);
+  z-index: var(--z-modal);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-primary);
+  color: var(--color-accent);
+  border-radius: var(--radius-md);
+  transition: inset-block-start var(--duration-fast) var(--ease-standard);
+}
+
+.skip-link:focus-visible {
+  inset-block-start: var(--space-md);
+}
+
+/* Visible by default; .js-reveal (added once the IntersectionObserver initializes) opts elements into the hidden-until-scrolled state. */
+.reveal-on-scroll {
+  transition:
+    opacity var(--duration-slow) var(--ease-standard),
+    transform var(--duration-slow) var(--ease-standard);
+}
+
+.js-reveal .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}
