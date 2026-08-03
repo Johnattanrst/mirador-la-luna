@@ -7,14 +7,15 @@ export function renderFaq(): string {
   const bodyHtml = `
     <div class="faq__list">
       ${faqItems
-        .map(
-          (item) => `
+        .map((item) => {
+          const answerHTML = escapeHtml(item.answer).replace(/\n/g, '<br />')
+          return `
             <details class="faq__item">
               <summary class="faq__question">${escapeHtml(item.question)}</summary>
-              <p class="faq__answer">${escapeHtml(item.answer)}</p>
+              <p class="faq__answer">${answerHTML}</p>
             </details>
-          `,
-        )
+          `
+      })
         .join('')}
     </div>
   `
