@@ -13,8 +13,8 @@
     "phone": "+57 311 400 8755"
   },
   "openingHours": [
-    { "days": "Lunes a Jueves", "hours": "12:00 – 22:00" },
-    { "days": "Viernes, Sábado y Domingo", "hours": "12:00 – 24:00" }
+    { "days": " Domingo a Jueves", "hours": "12:00 – 22:00" },
+    { "days": "Viernes y Sábado", "hours": "12:00 – 24:00" }
   ],
   "location": {
     "address": "Bello, Antioquia, Colombia",
